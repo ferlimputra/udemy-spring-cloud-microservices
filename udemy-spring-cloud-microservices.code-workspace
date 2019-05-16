@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "limit-service"
+    },
+    {
+      "path": "config-server"
+    },
+    {
+      "path": "local-configurations"
+    }
+  ],
+  "settings": {
+    "java.configuration.updateBuildConfiguration": "interactive"
+  }
+}
