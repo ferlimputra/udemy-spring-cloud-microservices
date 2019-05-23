@@ -10,9 +10,9 @@
     <!-- lookup parent from repository -->
   </parent>
   <groupId>com.udemy.microservices</groupId>
-  <artifactId>limit-service</artifactId>
+  <artifactId>currency-conversion-service</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>limit-service</name>
+  <name>currency-conversion-service</name>
   <description>Demo project for Spring Boot</description>
 
   <properties>
@@ -24,14 +24,35 @@
 
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-sleuth</artifactId>
+      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
       <version>2.1.1.RELEASE</version>
     </dependency>
 
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+      <artifactId>spring-cloud-starter-sleuth</artifactId>
       <version>2.1.1.RELEASE</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+      <version>2.1.1.RELEASE</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+      <version>2.1.1.RELEASE</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-webflux</artifactId>
+      <version>2.1.5.RELEASE</version>
     </dependency>
 
     <dependency>
@@ -56,6 +77,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectreactor</groupId>
+      <artifactId>reactor-spring</artifactId>
+      <version>1.0.1.RELEASE</version>
     </dependency>
   </dependencies>
 

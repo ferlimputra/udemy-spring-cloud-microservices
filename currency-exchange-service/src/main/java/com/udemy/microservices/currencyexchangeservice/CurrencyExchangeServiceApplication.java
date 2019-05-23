@@ -1,4 +1,4 @@
-package com.udemy.microservices.limitservice;
+package com.udemy.microservices.currencyexchangeservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,7 +8,7 @@ import brave.sampler.Sampler;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class LimitServiceApplication {
+public class CurrencyExchangeServiceApplication {
 
   @Bean
   public Sampler defaultSampler() {
@@ -16,7 +16,7 @@ public class LimitServiceApplication {
   }
 
   public static void main(String[] args) {
-    SpringApplication.run(LimitServiceApplication.class, args);
+    SpringApplication.run(CurrencyExchangeServiceApplication.class, args);
   }
 
 }

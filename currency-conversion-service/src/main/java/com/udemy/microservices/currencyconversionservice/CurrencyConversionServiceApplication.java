@@ -1,14 +1,16 @@
-package com.udemy.microservices.limitservice;
+package com.udemy.microservices.currencyconversionservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import brave.sampler.Sampler;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class LimitServiceApplication {
+@EnableFeignClients("com.udemy.microservices.currencyconversionservice")
+public class CurrencyConversionServiceApplication {
 
   @Bean
   public Sampler defaultSampler() {
@@ -16,7 +18,7 @@ public class LimitServiceApplication {
   }
 
   public static void main(String[] args) {
-    SpringApplication.run(LimitServiceApplication.class, args);
+    SpringApplication.run(CurrencyConversionServiceApplication.class, args);
   }
 
 }

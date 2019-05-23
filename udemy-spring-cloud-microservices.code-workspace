@@ -8,6 +8,18 @@
     },
     {
       "path": "C:\\Git Repo\\udemy-spring-cloud-microservices-configurations"
+    },
+    {
+      "path": "currency-exchange-service"
+    },
+    {
+      "path": "currency-conversion-service"
+    },
+    {
+      "path": "naming-server"
+    },
+    {
+      "path": "gateway-server"
     }
   ],
   "settings": {
